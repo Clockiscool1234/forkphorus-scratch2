@@ -1,3 +1,20 @@
+/*body {
+      margin: 0 auto;
+      overflow: hidden;
+      background-image: linear-gradient(#fff, #e7e9e9 100%);
+      height: 26px;
+      border-top: 1px solid #d0d1d2;
+      border-left: 1px solid #d0d1d2;
+      border-right: 1px solid #d0d1d2;
+      border-bottom: 1px solid #d0d1d2;
+      border-radius: 5px 5px 0 0 !important;
+      /* direction: rtl; */
+      /*position: relative;
+      /* top: 3px; */
+      /*box-sizing: content-box;
+      padding: 4px;/*
+    }*/
+
 .forkphorus-root {
   position: relative;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -255,18 +272,29 @@
 
 /* Player Controls */
 .player-controls {
-  position: relative;
-  height: 32px;
   overflow: hidden;
+  background-image: linear-gradient(#fff, #e7e9e9 100%);
+  height: 26px;
+  border-top: 1px solid #d0d1d2;
+  border-left: 1px solid #d0d1d2;
+  border-right: 1px solid #d0d1d2;
+  border-bottom: 1px solid #d0d1d2;
+  border-radius: 5px 5px 0 0 !important;
+  /* direction: rtl; */
+  position: relative;
+  /* top: 3px; */
+  box-sizing: content-box;
+  padding: 5px;
+  padding-bottom: 8px;
 }
-.player-controls .player-button {
+.player-button {
   width: 32px;
   height: 32px;
   float: right;
   cursor: pointer;
   text-align: center;
-  opacity: 0.4;
-  background-image: url(icons.svg);
+  opacity: 1;
+  background-image: url(icons.png);
   text-decoration: none;
 }
 .player-root[theme=dark] .player-button {
@@ -304,6 +332,7 @@
 }
 .player-controls .player-pause {
   background-position: -32px -0px;
+  display: none !important;
 }
 .player-root:not([running]) .player-controls .player-pause {
   background-position-x: -64px;
@@ -392,7 +421,7 @@
 .player-click-to-play-icon {
   width: 10em;
   height: 10em;
-  background-image: url(icons/click-to-play.svg);
+  background-image: url(icons/greenflag.png);
   background-size: 100% 100%;
 }
 
